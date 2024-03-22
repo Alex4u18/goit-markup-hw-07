@@ -59,7 +59,7 @@ ul {
   align-items: center;
   color: #ffffff;
   top: 72px;
-  width: 1440px;
+  width: 100%;
   height: 600px;
   top: 72px;
 }
@@ -81,8 +81,8 @@ ul {
   margin-block-start: 0;
 }
 .header-container-content {
-  width: 100%;
-  height: auto;
+  width: 428px;
+  height: 432px;
   position: relative;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -101,11 +101,11 @@ ul {
   align-items: center;
   font-family: var(--global-font-family);
   font-weight: 700;
-  font-size: 56px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 40px;
   letter-spacing: 0.06em;
   color: #fff;
-  width: 696px;
+  width: 320px;
   text-align: center;
 }
 
@@ -137,6 +137,9 @@ ul {
   size: 20px;
   color: var(--link-color);
   line-height: 1.5;
+}
+.about-h3 {
+  text-align: center;
 }
 
 .about li p {
@@ -175,7 +178,7 @@ ul {
 .footer {
   background-color: #2e2f42;
   color: #f4f4fd;
-  width: 1440px;
+  width: 100%;
   display: flex;
   justify-content: unset;
   align-content: baseline;
@@ -286,7 +289,6 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .section-img {
   display: flex;
   justify-content: space-around;
@@ -296,16 +298,6 @@ ul {
 .sub-heder {
   display: flex;
   justify-content: center;
-}
-
-.list-social-icons {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-bottom: 30px;
-  margin-right: 60px;
-  gap: 30px;
 }
 
 .social-icons {
@@ -340,20 +332,8 @@ ul {
 
 .team {
   background-color: #f4f4fd;
-  width: 1440px;
+  width: 100%;
   height: 780px;
-}
-
-.h2-team {
-  text-align: center;
-}
-
-.team-cards {
-  display: flex;
-  justify-content: space-around;
-  gap: 24px;
-  margin-top: 72px;
-  margin-bottom: 200px;
 }
 
 .section {
@@ -496,7 +476,7 @@ ul {
 }
 
 .footer .container {
-  width: 1440px;
+  width: 100%;
 }
 
 .is-hidden {
@@ -814,12 +794,16 @@ input:focus {
   top: 25px;
   right: 17px;
 }
-.about-icons {
+.about-icons svg {
   display: none;
 }
 .what-are-we-doing {
   display: none;
 }
+.h2-team {
+  text-align: center;
+}
+/* Stilizare pentru tableta */
 @media screen and (min-width: 768px) {
   .pages a {
     color: var(--link-color);
@@ -886,7 +870,7 @@ input:focus {
     display: none;
   }
   .header-container-content {
-    width: 1440px;
+    width: 100%;
     height: 600px;
     position: relative;
     background-image: linear-gradient(
@@ -899,11 +883,57 @@ input:focus {
   .about-list {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     gap: 24px;
   }
-}
-@media only screen and (max-width: 320px) {
-  body {
-    overflow-x: hidden;
+  .what-are-we-doing {
+    display: flex;
+  }
+  .about-icons svg {
+    display: flex;
+  }
+  .team-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    margin-top: 72px;
+    margin-bottom: 200px;
+  }
+  .list-social-icons {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    margin-right: 60px;
+    gap: 30px;
+  }
+  .container {
+    width: 1200px;
+  }
+  .about li h3 {
+    font-weight: 500;
+    size: 20px;
+    color: var(--link-color);
+    line-height: 1.5;
+  }
+  .about-h3 {
+    display: flex;
+  }
+  .h2-team {
+    text-align: center;
+  }
+  .h1-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--global-font-family);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    color: #fff;
+    width: 696px;
+    text-align: center;
   }
 }
