@@ -417,7 +417,7 @@ ul {
   display: flex;
   justify-content: center;
   margin-top: 120px;
-  margin-bottom: 280px;
+  margin-bottom: 0px;
 }
 
 .customers {
@@ -809,6 +809,14 @@ input:focus {
   gap: 72px;
   margin-bottom: 192px;
 }
+.container-team {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  gap: 72px;
+  margin-bottom: 192px;
+}
 
 .js-menu-container.is-open {
   display: flex;
@@ -1011,12 +1019,77 @@ input:focus {
   font-weight: 500;
 }
 
-/* Stilizare Tableta si device-uri intre 768px si 1158px */
+/* Stilizare Tableta  768px  */
 @media screen and (min-width: 768px) {
   .website {
     font-family: var(--global-font-family);
   }
+  .pages a {
+    color: var(--link-color);
+    text-decoration: none;
 
+    font-weight: 500;
+    gap: 40px;
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .pages {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block-start: 0;
+    gap: 24px;
+  }
+
+  .pages a:hover,
+  .pages a:focus {
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .pages a.active-studio {
+    border-bottom: 3px solid #404bbf;
+    width: 50px;
+    height: 22px;
+    border-radius: 2px;
+  }
+
+  .pages a.active-portfolio {
+    border-bottom: 3px solid #404bbf;
+    width: 77px;
+    height: 22px;
+    border-radius: 2px;
+  }
+
+  .h2-team {
+    width: 647px;
+  }
+
+  .team-cards {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    gap: 72px;
+    margin-bottom: 192px;
+    margin-left: 100px;
+  }
+  .about-list {
+    top: 598px;
+    left: 16px;
+    gap: 72px;
+    opacity: 0px;
+    width: 720px;
+  }
+  .container-team {
+    width: 300px;
+  }
+  .container-customers {
+    width: 580px;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+  }
   body {
     font-family: var(--global-font-family);
     letter-spacing: 0.03em;
@@ -1092,6 +1165,11 @@ input:focus {
     margin-left: 16px;
     align-items: baseline;
   }
+  .top-line {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 16px;
+  }
 
   .header-container-content {
     width: 768px;
@@ -1121,8 +1199,8 @@ input:focus {
     color: #fff;
     width: 320px;
     text-align: center;
-    margin-left: 300px;
     margin-bottom: 10px;
+    margin-left: 345px;
   }
 
   .hero {
@@ -1359,6 +1437,7 @@ input:focus {
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
+    margin-left: 100px;
   }
 
   .team {
@@ -1430,7 +1509,8 @@ input:focus {
     display: flex;
     justify-content: center;
     margin-top: 120px;
-    margin-bottom: 280px;
+    margin-left: 323px;
+    margin-bottom: 0px;
   }
 
   .customers {
@@ -1474,6 +1554,7 @@ input:focus {
 
   .social-media-footer {
     margin-left: 40px;
+    margin-top: 84px;
   }
 
   .social-media-footer p {
@@ -1789,7 +1870,7 @@ input:focus {
   }
 
   .pages {
-    display: none;
+    display: ;
   }
 
   .link-logo {
@@ -1817,12 +1898,6 @@ input:focus {
     gap: 72px;
     margin-bottom: 192px;
   }
-
-  /* .js-menu-container.is-open {
-    display: none;
-    flex-direction: column;
-    justify-content: start;
-  } */
 
   .btn-menu {
     position: absolute;
@@ -1855,9 +1930,17 @@ input:focus {
     opacity: 0px;
   }
 }
-
+.pages a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  gap: 40px;
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
 /* Stilizare Desktop si device-uri peste 1158px */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1159px) {
   .pages a {
     color: var(--link-color);
     text-decoration: none;
@@ -1867,7 +1950,13 @@ input:focus {
     margin-top: 24px;
     margin-bottom: 24px;
   }
-
+  .h2-customers {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 0px;
+    margin-bottom: 72px;
+  }
   .pages {
     display: flex;
     justify-content: space-evenly;
@@ -1936,6 +2025,7 @@ input:focus {
     justify-content: space-around;
     flex-direction: row;
     gap: 24px;
+    width: 1440px;
   }
 
   .what-are-we-doing {
@@ -1955,7 +2045,14 @@ input:focus {
     margin-top: 72px;
     margin-bottom: 200px;
   }
-
+  .container-team {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    gap: 72px;
+    margin-bottom: 192px;
+  }
   .list-social-icons {
     list-style-type: none;
     display: flex;
@@ -2006,6 +2103,10 @@ input:focus {
 
   .container-customers {
     height: 100px;
+    width: 1200px;
+    display: flex;
+    margin-left: 18px;
+    justify-content: space-around;
   }
 
   .customers-icons {
